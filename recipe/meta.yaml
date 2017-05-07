@@ -11,7 +11,7 @@ source:
   sha256: d66fcd0081ad1ec8a0869f98d05e33b50001b51a1fe07040a3eb700ec169824e
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script:
     # https://github.com/conda-forge/toolchain-feedstock/pull/11
@@ -25,6 +25,7 @@ requirements:
     - pkg-config
     - gmp >=5.0.1,<7.0
     - mpfr 3.*
+    - qd 2.3.*
     - fplll 5.1.*
     - cysignals
     - numpy x.x
@@ -32,6 +33,7 @@ requirements:
   run:
     - gmp >=5.0.1,<7.0
     - mpfr 3.*
+    - qd 2.3.*
     - fplll 5.1.*
     - cysignals
     - numpy x.x
