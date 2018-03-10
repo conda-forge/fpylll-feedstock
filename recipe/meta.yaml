@@ -7,7 +7,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/fplll/fpylll/releases/download/0.3.0dev/fpylll-{{ version }}.tar.gz
+  url: https://github.com/fplll/fpylll/releases/download/{{ version }}/fpylll-{{ version }}.tar.gz
   sha256: 75303197286c0a5f5b123dcf01304585902c4e7031b30a5c70edbfc28327278b
 
 build:
