@@ -28,7 +28,7 @@ requirements:
     - qd 2.3.*
     - fplll 5.1.*
     - cysignals
-    - numpy x.x
+    - numpy 1.11.*
     - python
   run:
     - gmp >=5.0.1,<7.0
@@ -36,7 +36,7 @@ requirements:
     - qd 2.3.*
     - fplll 5.1.*
     - cysignals
-    - numpy x.x
+    - numpy >=1.11
     - python
 
 test:
