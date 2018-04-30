@@ -11,7 +11,7 @@ source:
   sha256: 75303197286c0a5f5b123dcf01304585902c4e7031b30a5c70edbfc28327278b
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   script:
     # https://github.com/conda-forge/toolchain-feedstock/pull/11
@@ -24,7 +24,7 @@ requirements:
     - cython
     - pkg-config
     - gmp >=5.0.1,<7.0
-    - mpfr 3.*
+    - mpfr 4.*
     - qd 2.3.*
     - fplll 5.2.*
     - cysignals
@@ -32,7 +32,7 @@ requirements:
     - python
   run:
     - gmp >=5.0.1,<7.0
-    - mpfr 3.*
+    - mpfr 4.*
     - qd 2.3.*
     - fplll 5.2.*
     - cysignals
