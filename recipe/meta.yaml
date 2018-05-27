@@ -11,32 +11,31 @@ source:
   sha256: 75303197286c0a5f5b123dcf01304585902c4e7031b30a5c70edbfc28327278b
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   script:
-    # https://github.com/conda-forge/toolchain-feedstock/pull/11
-    - export CPPFLAGS="-I${PREFIX}/include ${CPPFLAGS}"
     - python setup.py install
 
 requirements:
   build:
-    - toolchain
-    - cython
+    - {{ compiler('cxx') }}
     - pkg-config
-    - gmp >=5.0.1,<7.0
-    - mpfr 3.*
+  host:
+    - cython
+    - gmp
+    - mpfr
     - qd 2.3.*
     - fplll 5.2.*
     - cysignals
     - numpy 1.11.*
     - python
   run:
-    - gmp >=5.0.1,<7.0
-    - mpfr 3.*
+    - gmp
+    - mpfr
     - qd 2.3.*
-    - fplll 5.2.*
+    - fplll
     - cysignals
-    - numpy >=1.11
+    - {{ pin_compatible('numpy') }}
     - python
 
 test:
