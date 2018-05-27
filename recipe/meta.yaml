@@ -14,29 +14,28 @@ build:
   number: 2
   skip: true  # [win]
   script:
-    # https://github.com/conda-forge/toolchain-feedstock/pull/11
-    - export CPPFLAGS="-I${PREFIX}/include ${CPPFLAGS}"
     - python setup.py install
 
 requirements:
   build:
-    - toolchain
-    - cython
+    - {{ compiler('cxx') }}
     - pkg-config
-    - gmp >=5.0.1,<7.0
-    - mpfr 4.*
+  host:
+    - cython
+    - gmp
+    - mpfr
     - qd 2.3.*
-    - fplll 5.2.*
+    - fplll
     - cysignals
     - numpy 1.11.*
     - python
   run:
-    - gmp >=5.0.1,<7.0
-    - mpfr 4.*
+    - gmp
+    - mpfr
     - qd 2.3.*
-    - fplll 5.2.*
+    - fplll
     - cysignals
-    - numpy >=1.11
+    - {{ pin_compatible('numpy') }}
     - python
 
 test:
