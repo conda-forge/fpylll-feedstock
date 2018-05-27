@@ -14,14 +14,16 @@ Summary: A Python (2 and 3) wrapper for fplll.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/fpylll-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/fpylll-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/fpylll-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/fpylll-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/fpylll-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/fpylll-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/fpylll-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/fpylll-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fpylll/badges/version.svg)](https://anaconda.org/conda-forge/fpylll)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fpylll/badges/downloads.svg)](https://anaconda.org/conda-forge/fpylll)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-fpylll-green.svg)](https://anaconda.org/conda-forge/fpylll) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/fpylll.svg)](https://anaconda.org/conda-forge/fpylll) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/fpylll.svg)](https://anaconda.org/conda-forge/fpylll) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/fpylll.svg)](https://anaconda.org/conda-forge/fpylll) |
 
 Installing fpylll
 =================
