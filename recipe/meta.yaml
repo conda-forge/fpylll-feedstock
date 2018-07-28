@@ -25,7 +25,7 @@ requirements:
     - gmp
     - mpfr
     - qd 2.3.*
-    - fplll 5.2.*
+    - fplll 5.2.1
     - cysignals
     - numpy 1.11.*
     - python
