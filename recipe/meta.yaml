@@ -11,7 +11,7 @@ source:
   sha256: b2024cb3b03ebd2ca64f4ccea1a38110dc51d38ff62ad720de598ef23946a7eb
 
 build:
-  number: 0
+  number: 1000
   skip: true  # [win]
   script:
     - python setup.py install
