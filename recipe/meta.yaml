@@ -24,15 +24,15 @@ requirements:
     - cython
     - gmp
     - mpfr
-    - qd 2.3.*
-    - fplll 5.2.1
+    - qd
+    - fplll
     - cysignals
-    - numpy 1.11.*
+    - numpy
     - python
   run:
     - gmp
     - mpfr
-    - qd 2.3.*
+    - qd
     - fplll
     - cysignals
     - {{ pin_compatible('numpy') }}
@@ -42,7 +42,7 @@ test:
   requires:
     - pytest
   commands:
-    - py.test
+    - py.test --disable-pytest-warnings
   imports:
     - fpylll
   source_files:
