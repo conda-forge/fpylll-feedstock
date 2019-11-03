@@ -1,19 +1,19 @@
-build_number_decrement:
-- '1000'
 channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- toolchain_cxx
+- gxx
+cxx_compiler_version:
+- '7'
 docker_image:
-- condaforge/linux-anvil
+- condaforge/linux-anvil-comp7
 gmp:
 - '6'
 mpfr:
 - '4'
 numpy:
-- '1.9'
+- '1.14'
 pin_run_as_build:
   gmp:
     max_pin: x
@@ -23,10 +23,4 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- '3.6'
-zip_keys:
-- - cxx_compiler
-  - channel_sources
-  - channel_targets
-  - docker_image
-  - build_number_decrement
+- '2.7'
