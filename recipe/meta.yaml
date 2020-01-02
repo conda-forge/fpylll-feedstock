@@ -1,4 +1,4 @@
-{% set version = "0.4.1dev" %}
+{% set version = "0.5.1dev" %}
 {% set name = "fpylll" %}
 
 package:
@@ -8,13 +8,13 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/fplll/fpylll/releases/download/{{ version }}/fpylll-{{ version }}.tar.gz
-  sha256: b2024cb3b03ebd2ca64f4ccea1a38110dc51d38ff62ad720de598ef23946a7eb
+  sha256: 5bc4640235d99abb1cc99ccca2368a1a94722e45cae8689aecbf17bc1508d8a2
 
 build:
-  number: 1000
+  number: 0
   skip: true  # [win]
   script:
-    - python setup.py install
+    - {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -29,6 +29,7 @@ requirements:
     - cysignals
     - numpy
     - python
+    - pip
   run:
     - gmp
     - mpfr
