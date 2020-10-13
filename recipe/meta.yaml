@@ -51,7 +51,7 @@ test:
 
 about:
   home: https://github.com/fplll/fpylll
-  license: GPLv2+
+  license: GPL-2.0-or-later
   license_file: LICENSE
   summary: A Python (2 and 3) wrapper for fplll.
   dev_url: https://github.com/fplll/fpylll
