@@ -11,7 +11,7 @@ source:
   sha256: 5bc4640235d99abb1cc99ccca2368a1a94722e45cae8689aecbf17bc1508d8a2
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script:
     - {{ PYTHON }} -m pip install . -vv
@@ -51,7 +51,7 @@ test:
 
 about:
   home: https://github.com/fplll/fpylll
-  license: GPLv2+
+  license: GPL-2.0-or-later
   license_file: LICENSE
   summary: A Python (2 and 3) wrapper for fplll.
   dev_url: https://github.com/fplll/fpylll
