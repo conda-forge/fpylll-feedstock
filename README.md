@@ -3,7 +3,7 @@ About fpylll
 
 Home: https://github.com/fplll/fpylll
 
-Package license: GPLv2+
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fpylll-feedstock/blob/master/LICENSE.txt)
 
