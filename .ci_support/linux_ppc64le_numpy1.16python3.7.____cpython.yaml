@@ -7,9 +7,9 @@ channel_targets:
 cxx_compiler:
 - gxx
 cxx_compiler_version:
-- '8'
+- '9'
 docker_image:
-- condaforge/linux-anvil-ppc64le
+- quay.io/condaforge/linux-anvil-ppc64le
 gmp:
 - '6'
 mpfr:
