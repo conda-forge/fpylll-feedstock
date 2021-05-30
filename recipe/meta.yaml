@@ -1,4 +1,4 @@
-{% set version = "0.5.5" %}
+{% set version = "0.5.6" %}
 {% set name = "fpylll" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/fplll/fpylll/releases/download/{{ version }}/fpylll-{{ version }}.tar.gz
-  sha256: 791aa79da39ee8d995341168f9e1cadf1434415b3a619941f6346078ff63d5ce
+  sha256: c69bf4b3344f60ca40743af9b9246ce51f651c2cf54d2b88a4deff18b1b5f246
 
 build:
   number: 0
