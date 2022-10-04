@@ -11,7 +11,7 @@ source:
   sha256: d55ebee35e8b521f37e4d910b3e1c8a099d831a3d34aa376f555cfa8870805ff
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script:
     - {{ PYTHON }} -m pip install . -vv
@@ -29,18 +29,13 @@ requirements:
     - gmp
     - mpfr
     - qd
-    - fplll >=5.4.0
+    - fplll >=5.4.2
     - cysignals
     - numpy
     - python
     - pip
   run:
-    - gmp
-    - mpfr
-    - qd
-    - fplll
     - cysignals
-    - {{ pin_compatible('numpy') }}
     - python
 
 test:
