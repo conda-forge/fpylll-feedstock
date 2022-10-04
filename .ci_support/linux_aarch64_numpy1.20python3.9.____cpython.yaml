@@ -1,3 +1,7 @@
+BUILD:
+- aarch64-conda_cos7-linux-gnu
+cdt_arch:
+- aarch64
 cdt_name:
 - cos7
 channel_sources:
@@ -15,19 +19,15 @@ gmp:
 mpfr:
 - '4'
 numpy:
-- '1.19'
+- '1.20'
 pin_run_as_build:
-  gmp:
-    max_pin: x
-  mpfr:
-    max_pin: x
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.7.* *_cpython
+- 3.9.* *_cpython
 target_platform:
-- linux-ppc64le
+- linux-aarch64
 zip_keys:
 - - python
   - numpy
