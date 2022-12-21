@@ -1,4 +1,4 @@
-{% set version = "0.5.7" %}
+{% set version = "0.5.8" %}
 {% set name = "fpylll" %}
 
 package:
@@ -8,10 +8,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/fplll/fpylll/releases/download/{{ version }}/fpylll-{{ version }}.tar.gz
-  sha256: d55ebee35e8b521f37e4d910b3e1c8a099d831a3d34aa376f555cfa8870805ff
+  sha256: 3f32344b44c5a0064f6ad493cfacea0fee123eec3a85f252fe1316e0982a16aa
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   script:
     - {{ PYTHON }} -m pip install . -vv
