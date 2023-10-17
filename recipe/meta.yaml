@@ -1,4 +1,4 @@
-{% set version = "0.5.9" %}
+{% set version = "0.6.0" %}
 {% set name = "fpylll" %}
 
 package:
@@ -8,11 +8,13 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/fplll/fpylll/releases/download/{{ version }}/fpylll-{{ version }}.tar.gz
-  sha256: 5652ce92ead07ebf402d6b85af228df106cd4c24f0c7f6cf50004722c436a248
+  sha256: 0f2764e3c3e861024af7c3bc0afdb0de2ad98e5430315afb229a98c91e66e1d2
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
+  # fpylll supports Python 3.10+. However, it seems to build with 3.9, so we keep it around for the moment.
+  skip: true  # [py<39]
   script:
     - {{ PYTHON }} -m pip install . -vv
 
