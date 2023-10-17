@@ -32,13 +32,13 @@ requirements:
     - fplll >=5.4.4
     - cysignals
     - numpy
-    - python
+    - python >=3.9
     - pip
   run:
     - cysignals
     # While newer versions of numpy have a run_exports, older versions might be lacking this, so we pin explicitly.
     - {{ pin_compatible('numpy') }}
-    - python
+    - python >=3.9
 
 test:
   requires:
