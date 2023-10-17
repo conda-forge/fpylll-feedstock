@@ -13,6 +13,8 @@ source:
 build:
   number: 0
   skip: true  # [win]
+  # fpylll supports Python 3.10+. However, it seems to build with 3.9, so we keep it around for the moment.
+  skip: true  # [py<39]
   script:
     - {{ PYTHON }} -m pip install . -vv
 
@@ -32,13 +34,13 @@ requirements:
     - fplll >=5.4.4
     - cysignals
     - numpy
-    - python >=3.9
+    - python
     - pip
   run:
     - cysignals
     # While newer versions of numpy have a run_exports, older versions might be lacking this, so we pin explicitly.
     - {{ pin_compatible('numpy') }}
-    - python >=3.9
+    - python
 
 test:
   requires:
