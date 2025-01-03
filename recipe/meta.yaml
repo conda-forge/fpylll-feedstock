@@ -32,14 +32,13 @@ requirements:
     - gmp
     - mpfr
     - qd
-    - fplll >=5.4.4
+    - fplll 5.4.5
     - cysignals
     - numpy
     - python
     - pip
   run:
     - cysignals
-    # While newer versions of numpy have a run_exports, older versions might be lacking this, so we pin explicitly.
     - python
 
 test:
