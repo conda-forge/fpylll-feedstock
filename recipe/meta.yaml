@@ -11,7 +11,7 @@ source:
   sha256: c8a18e735358adef4c398fcc2f567fda01f79f7321825d747dfb2d3dfeef33b3
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   # fpylll supports Python 3.10+. However, it seems to build with 3.9, so we keep it around for the moment.
   skip: true  # [py<39]
@@ -25,21 +25,20 @@ requirements:
     - cython                                 # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - pkg-config
   host:
     - cython
     - gmp
     - mpfr
     - qd
-    - fplll >=5.4.4
+    - fplll 5.4.5
     - cysignals
     - numpy
     - python
     - pip
   run:
     - cysignals
-    # While newer versions of numpy have a run_exports, older versions might be lacking this, so we pin explicitly.
-    - {{ pin_compatible('numpy') }}
     - python
 
 test:
