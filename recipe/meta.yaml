@@ -6,7 +6,6 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/fplll/fpylll/releases/download/{{ version }}/fpylll-{{ version }}.tar.gz
   sha256: d5b2f250afb6fb2f9c70e03ffe1169ff6f2e167e348da1328cc20b693b915fbe
 
@@ -32,11 +31,12 @@ requirements:
     - gmp
     - mpfr
     - qd
-    - fplll 5.4.5
+    - fplll
     - cysignals
     - numpy
     - python
     - pip
+    - setuptools
   run:
     - cysignals
     - python
